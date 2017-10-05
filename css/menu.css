@@ -1,0 +1,56 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+nav{
+	max-width: 1200px;
+	width: 100%;
+	height: 80px;
+	margin: auto;
+	background-color: #730099;
+	box-sizing: border-box;
+	font-family: 'Droid Sans', sans-serif;
+	font-style: italic;
+}
+
+ul{
+	list-style-type: none;
+	float: left;
+	margin-left: 120px;
+}
+
+ul li{
+	width: 130px;
+	height: 30px;
+	line-height: 30px;
+	float:left;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+}
+
+ul li:hover{
+	background-color: #4d0066;
+}
+
+.login{
+	width: 25%;
+	height: 30px;
+	color: #d9d9d9;
+	text-align: center;
+	float: left;
+	margin-top: 5px;
+}
+
+.login a{
+	color: white;
+	text-decoration: none;
+	margin: 10px;
+}
+
+nav img{
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+}
