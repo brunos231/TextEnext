@@ -1,19 +1,126 @@
+/*Estilização para as Media Queries*/
+
 *{
 	padding: 0;
 	margin: 0;
 }
 
+/*Media para telas maiores que 1100 pixels*/
 @media screen and (min-width: 1101px){
-	.msg-rsp, .menu{
+	.msg-rsp, .menu, .btn-close, .fbusca-rsp, .busca-rsp{
 		display: none;
+	}
+
+	.background{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		background-color: #000;
+		opacity: .0;
+		z-index: 100;
+		display: none;
+	}
+
+	.box{
+		position: absolute;
+		top: 10%;
+		left: 10%;
+		width: 1000px;
+		height: 500px;
+		background-color: #fff;
+		z-index: 101;
+		padding: 20px;
+		border-radius: 4px;
+		display: none;
+		border: 5px solid #000;
+	}
+
+	.close{
+		float: right;
+		margin-right: 10px;
+		cursor: pointer;
 	}
 } 
 
+/*Edição para as telas menores que 1100 pixels -- Tela Responsiva*/
+/*Todos os elementos visuais da tela responsiva esta nesta página*/
 @media screen and (max-width: 1100px){
-	.logo, .pesqisa, .fbusca, .busca, .msg, .btn, .links a{display: none;}
+	.logo, .pesqisa, .fbusca, .busca, .msg, .btn, .links a, .background, .box, .close{display: none;}
 
 	nav{
+		width: 100%;
+		height: 60%;
+		position: fixed;
 		display: none;
+	}
+
+	.btn-close{
+		width: 20%;
+		height: 200px;
+		font-size: 6em;
+		float: left;
+		cursor: pointer;
+		box-sizing: border-box;
+		text-align: center;
+		background-color: #fff;
+		padding-top: 50px; 
+	}
+
+	.busca-rsp{
+		width: 80%;
+		height: 200px;
+		float: left;
+		text-align: center;
+		padding-top: 50px;
+		box-sizing: border-box;
+		background-color: #fff;
+	}
+
+	.fbusca-rsp{
+		width: 80%;
+		height: 70px;
+		font-size: 3em;
+		border: 3px solid #000;
+		padding: 15px;
+	}
+
+	ul{
+		width: 100%;
+		float: left;
+		margin: 0px;
+		font-size: 3em;
+	}
+
+	ul li{
+		width: 100%;
+		float: left;
+		height: 100px;
+		padding: 30px;
+		border-bottom: 3px solid #bfbfbf;
+		text-align: left;
+		padding-left: 130px;
+		box-sizing: border-box;
+	}
+
+	ul li:hover{
+		background-color: #4d0066;
+	}
+
+	ul li img{
+		height: 35px;
+		width: 35px;
+		float: right;
+	}
+
+	.login{
+		text-align: center;
+		width: 100%;
+		height: 200px;
+		font-size: 3em;
+		box-sizing: border-box;
+		padding-top: 100px;
 	}
 
 	header{
@@ -36,6 +143,7 @@
 		margin-top: 50px;
 		border: none;
 		background-color: white;
+		cursor: pointer;
 	}
 
 	.logo{

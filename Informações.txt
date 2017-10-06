@@ -1,0 +1,32 @@
+Teste de empresa - Enext
+
+Nome: Bruno da Costa Silva
+Email: brunocosta231@gmail.com
+
+Página: Merlin´s Potion
+
+Navegador usado: Google Chrome
+Versão 61.0.3163.100 (Versão oficial) 32 bits
+
+IDE usado para desenvolver:
+Subime Text, Versão 3.0 - Build 3143
+
+Notações sobre a página:
+
+-Devido ao tempo apertado, só consegui desenvolver para apenas Google Chrome, abrir a página em outros navegadores pode causar desestabilidade, tanto no modo responsivo como no desktop.
+
+-Não usei quaisquer frameworks para o teste, exeto o JQuery (Não sei se é framework) para dar os efeitos de menu e ligthbox.
+
+-Infelizmente não consegui adicionar as informações no lightbox, mas consegui montar a sua estrutura usando JQuery.
+
+-Devido o não uso de frameworks (CSS), os icones ficaram diferentes, são imagens da internet ajustadas.
+
+-Todas as páginas, tanto as de estilo, como as html estão devidamente comentadas.
+
+-Itens como carrinho e menus dropdown não foram configuradas, apenas estilizadas.
+
+
+-Páginas testadas apenas usando Google Chrome desktop e suas ferramentas responsivas, não testado em outros navegadores e nem no celular.
+
+
+***Quaisquer duvidas sobre a página não exitar, entre em contato a qualquer momento***

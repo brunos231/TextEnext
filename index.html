@@ -6,100 +6,130 @@
 	<meta name="author" content="Bruno Silva">
 	<meta name="description" content="Poçoes Diversas">
 
+	<!--Linkagem das paginas CSS -->
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
 	<link rel="stylesheet" type="text/css" href="css/body.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 
+	<!--Pagina CSS adaptada para mobile -->
 	<link rel="stylesheet" type="text/css" href="css/queries.css">
 
+	<!--Link para Google Fontes -->
 	<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Oswald" rel="stylesheet">
+
+	<!--Link para o arquivo JQuery -->
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+
 </head>
 <body>
-	<header>
-		<div class="menu">
+	<header> <!--Inicio do Cabeçalho -->
+		<div class="menu"><!--menu responsivo -->
 			<input type="submit" class="btn-menu" value="">
 		</div>
-		<div class="logo">
-			<p class="title"><b>MERLIN´S</b> POTIONS</p>
-			<p class="sub">fine potions since 1026</p>
-		</div>
+		<!--logo-->
+		<a href="index.html">
+			<div class="logo">
+				<p class="title"><b>MERLIN´S</b> POTIONS</p>
+				<p class="sub">-----fine potions since 1026-----</p>
+			</div>
+		</a>
+		<!--barra de busca-->
 		<div class="busca">
 			<form action="#">
 				<input type="submit" class="btn" name="pesq" value="">
 				<input type="text" class="fbusca" name="busca" placeholder="Search our stock">
 			</form>
 		</div>
+		<!--mensagem-->
 		<div class="msg">
 			<p>Free shipping<br>on orders over $50</p>
 		</div>
+		<!--caldeirão ou carrinho-->
 		<div class="carrinho">
 			<a href="#">
 				<img src="image/icons/caldeirao.png">
 				<p>BAG: <span class="num">1</span></p>
 			</a>
 		</div>
-			<div class="msg-rsp">
+		<!--mensagem responsiva-->
+		<div class="msg-rsp">
 			<p>Free shipping on orders over $50</p>
 		</div>
-	</header>
-	<nav>
-		<ul>
-			<li>Potions
-				<img src="image/icons/setabaixo.png">
-			</li>
-			<li>Ingredients
-				<img src="image/icons/setabaixo.png">
-			</li>
-			<li>Books
-				<img src="image/icons/setabaixo.png">
-			</li>
-			<li>Supplies
-				<img src="image/icons/setabaixo.png">
-			</li>
-			<li>Charms
-				<img src="image/icons/setabaixo.png">
-			</li>
-			<li>Clearance!</li>
-		</ul>
 
-		<div class="login">
-			<a href="#">Sign In</a> or <a href="#">Sign Up</a>
-		</div>
-	</nav>
+		<nav><!--Inicio da Barra de Navegação - Menu-->
+			<a class="btn-close">X</a><!--Botão close, responsivo-->
 
-	<section>
-		<h1>Potions</h1>
+			<div class="busca-rsp"> <!--barra de busca responsiva-->
+				<form action="#">
+					<input type="text" class="fbusca-rsp" name="busca" placeholder="Search our stock">
+				</form>
+			</div>
 
-		<div class="produtos">
-			<div>
-				<img src="image/products/aging-potion.png">
-				<legend>Poção Poli-Suco, deixa viado</legend>
-			</div>
-			<div>
-				<img src="image/products/bulgeye-potion.png">
-				<legend>Poção Poli-Suco, deixa viado</legend>
-			</div>
-			<div>
-				<img src="image/products/dragon-tonic.png">
-				<legend>Poção Poli-Suco, deixa viado</legend>
-			</div>
-			<div>
-				<img src="image/products/love-potion.png">
-				<legend>Poção Poli-Suco, deixa viado</legend>
-			</div>
-			<div>
-				<img src="image/products/polyjuice-potion.png">
-				<legend>Poção Poli-Suco, deixa viado</legend>
-			</div>
-			<div>
-				<img src="image/products/sleeping-draught.png">
-				<legend>Poção Poli-Suco, deixa viado</legend>
-			</div>
-		</div>
-	</section>
+			<ul> <!--Lista de itens no menu-->
+				<li>Potions
+					<img src="image/icons/setabaixo.png">
+				</li>
+				<li>Ingredients
+					<img src="image/icons/setabaixo.png">
+				</li>
+				<li>Books
+					<img src="image/icons/setabaixo.png">
+				</li>
+				<li>Supplies
+					<img src="image/icons/setabaixo.png">
+				</li>
+				<li>Charms
+					<img src="image/icons/setabaixo.png">
+				</li>
+				<li>Clearance!  </li>
+			</ul>
 
-	<footer>
+			<div class="login"> <!--Link de login-->
+				<a href="#">Sign In</a> or <a href="#">Sign Up</a>
+			</div>
+		</nav>
+	</header><!--Fim do Cabeçalho -->
+
+	<section><!--Inicio do Corpo da página -->
+		<h1>Potions</h1><!--Titulo da Página-->
+
+		<div class="produtos"><!--Painel de Produtos ou Vitrine-->
+			<div>
+				<a href="#" class="lightbox"><img src="image/products/aging-potion.png"></a>
+				<legend><b>Aging Potion - </b><span class="preco">29.99</span></legend>
+			</div>
+			<div>
+				<a href="#" class="lightbox"><img src="image/products/bulgeye-potion.png"></a>
+				<legend><b>Bulgeye Potion - </b><span class="preco">19.99</span></legend>
+			</div>
+			<div>
+				<a href="#" class="lightbox"><img src="image/products/dragon-tonic.png"></a>
+				<legend><b>Dragon Tonic - </b><span class="preco">64.99</span></legend>
+			</div>
+			<div>
+				<a href="#" class="lightbox"><img src="image/products/love-potion.png"></a>
+				<legend><b>Love Potion - </b><span class="preco">29.99</span></legend>
+			</div>
+			<div>
+				<a href="#" class="lightbox"><img src="image/products/polyjuice-potion.png"></a>
+				<legend><b>Polyjuice Potion - </b><span class="preco">99.99</span></legend>
+			</div>
+			<div>
+				<a href="#" class="lightbox"><img src="image/products/sleeping-draught.png"></a>
+				<legend><b>Sleeping Draught - </b><span class="preco">29.99</span></legend>
+			</div>
+		</div><!--Fim da Vitrine-->
+
+		<!--Painel de visualização do lightbox-->
+		<div class="background"></div>
+			<div class="box">
+				<div class="close">X</div>
+			</div>
+	</section><!--Fim do Corpo da Página-->
+
+	<footer><!--Inicio do Rodapé da Página-->
+		<!--Box com os links-->
 		<div class="links">
 			<a href="#">COMPANY</a>
 			<a href="#">CONTACT US</a>
@@ -116,7 +146,7 @@
 			<br>
 			<p>2015 Merlin´s Potions. All Rights Reserved</p>
 		</div>
-
+		<!--Box contendo informações de Contato-->
 		<div class="contato">
 			<p>Sing up our Newslatter</p><br>
 			<p>Sign up for our newslatter & get exclusive discounts!</p>
@@ -125,6 +155,40 @@
 				<input type="submit" class="btn2" value="SUBMIT">
 			</form>
 		</div>
-	</footer>
+	</footer><!--Fim do Rodapé-->
+
+	<!--Script JavaScript para efeitos de página-->
+	<script>
+		/*Abre menu responsivo*/
+		$(document).ready(function(){
+			$(".btn-menu").click(function(){ 
+				$("nav").show();
+			});
+
+			/*Fecha o menu responsivo*/
+			$(".btn-close").click(function(){
+				$("nav").hide();
+			});
+
+			/*Efeitos do LightBox*/
+			$('.lightbox').click(function(){
+				$('.background, .box').animate({'opacity':'.60'}, 500, 'linear');
+				$('.box').animate({'opacity':'1.00'}, 500, 'linear');
+				$('.background, .box').css('display', 'block');
+
+				$('.close').click(function(){
+					$('.background, .box').animate({'opacity':'0'}, 500, 'linear', function(){
+						$('.background, .box').css('display', 'none');
+					});
+				})
+
+				$('.background').click(function(){
+					$('.background, .box').animate({'opacity':'0'}, 500, 'linear', function(){
+						$('.background', '.box').css('display', 'none');
+					})
+				})
+			})
+		})
+	</script> <!--Fim do Script-->
 </body>
 </html>
