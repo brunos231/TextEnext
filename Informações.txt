@@ -19,6 +19,8 @@ Notações sobre a página:
 
 -Infelizmente não consegui adicionar as informações no lightbox, mas consegui montar a sua estrutura usando JQuery.
 
+-Não consegui fazer o piercing das informações da página JSON, devido não ter o pleno conhecimento :(
+
 -Devido o não uso de frameworks (CSS), os icones ficaram diferentes, são imagens da internet ajustadas.
 
 -Todas as páginas, tanto as de estilo, como as html estão devidamente comentadas.
